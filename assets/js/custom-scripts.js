@@ -354,7 +354,7 @@
     |=================
     */
 
-  $("#contactForm")
+  /*$("#contactForm")
     .validator()
     .on("submit", function (event) {
       if (event.isDefaultPrevented()) {
@@ -376,6 +376,8 @@
       type: "POST",
       url: "process.php",
       data: "name=" + name + "&email=" + email + "&message=" + message,
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
       success: function (text) {
         if (text == "success") {
           formSuccess()
@@ -406,7 +408,7 @@
       var msgClasses = "h3 text-center shake animated text-danger"
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg)
-  }
+  }*/
 })(jQuery)
 
 $(document).ready(function () {
