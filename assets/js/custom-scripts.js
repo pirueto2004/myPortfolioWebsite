@@ -379,6 +379,7 @@
       success: function (text) {
         if (text == "success") {
           formSuccess()
+          alert("Form submitted!")
         } else {
           formError()
           submitMSG(false, text)
